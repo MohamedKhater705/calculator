@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <header>
+                <h1>calc</h1>
+                <div class="head-wrapper">
+                    <span class="them-label">THEMES</span>
+                    <div class="themes-switch">
+                        <button id="theme-1">1</button>
+                        <button id="theme-2">2</button>
+                        <button id="theme-3">3</button>
+                    </div>
+
+                </div>
+            </header>
+        </div>
+        <output id="display-text" class="screen">0</output>
+
+        <div class="keypad">
+            <button type="button" data-number>7</button>
+            <button type="button" data-number>8</button>
+            <button type="button" data-number>9</button>
+            <button type="button" data-action="delete" class="dele">DEL</button>
+
+            <button type="button" data-number>4</button>
+            <button type="button" data-number>5</button>
+            <button type="button" data-number>6</button>
+            <button type="button" data-operator>+</button>
+
+            <button type="button" data-number>1</button>
+            <button type="button" data-number>2</button>
+            <button type="button" data-number>3</button>
+            <button type="button" data-operator>-</button>
+
+            <button type="button" data-number=".">.</button>
+            <button type="button" data-number>0</button>
+            <button type="button" data-operator>/</button>
+            <button type="button" data-operator="*" value="*">x</button>
+            <button type="button" data-action="reset" class="reset-btn">RESET</button>
+            <button type="button" data-action="calc" class="calc-btn">=</button>
+        </div>
+
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
